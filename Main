@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+import java.io.FileWriter;
+
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+
+		//сканер записує введений рядок в змінну текст
+		Scanner vvid = new Scanner(System.in);
+		System.out.println("Введіть текст:");
+		String text = vvid.nextLine();
+
+    //райтер записує змінну текст в файл
+		FileWriter nFile = new FileWriter("file1.txt");
+		nFile.write(text);
+		nFile.close();
+	}
+}
